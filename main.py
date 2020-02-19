@@ -3,6 +3,9 @@ import wifisetup
 import blinking
 
 # connect to the wifi
-wifisetup.setup()
+is_connected = wifisetup.setup()
 
-blinking.blink(2)
+if is_connected:
+	blinking.blink(2)
+else:
+	blinking.blink(10)
