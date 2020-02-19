@@ -1,0 +1,4 @@
+venv
+webrepl
+firmware
+*.pyc
