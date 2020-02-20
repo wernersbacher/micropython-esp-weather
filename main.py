@@ -1,5 +1,5 @@
 import wifisetup
-import hardware
+import boardhandling
 import web
 
 def run():
