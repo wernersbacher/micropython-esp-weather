@@ -14,8 +14,7 @@ def run():
 		boardhandling.show_error()
 
 	if not boardhandling.is_debug():
-		pass
-		#hardware.deepsleep()
+		boardhandling.deepsleep()
 
 
 run()
