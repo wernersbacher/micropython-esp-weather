@@ -1,6 +1,8 @@
 
 import wifisetup
-import blinking
+import hardware
+
+
 
 # connect to the wifi
 is_connected = wifisetup.setup()
