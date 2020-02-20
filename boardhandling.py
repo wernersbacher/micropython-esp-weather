@@ -28,7 +28,7 @@ def show_error():
 
 
 def is_debug():
-    debug = machine.Pin(config.DEBUG_PIN, machine.Pin.IN, machine.Pin.PULL_UP)
+    debug = machine.Pin(DEBUG_PIN, machine.Pin.IN, machine.Pin.PULL_UP)
     if debug.value() == 0:
         print('Debug mode detected.')
         return True
@@ -46,6 +46,6 @@ def deepsleep():
 
 # get the temps
 def get_temperature_and_humidity():
-    dht22 = dht.DHT22(machine.Pin(config.DHT22_PIN))
+    dht22 = dht.DHT22(machine.Pin(DHT22_PIN))
     dht22.measure()
     return dht22.temperature(), dht22.humidity()
