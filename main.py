@@ -14,7 +14,8 @@ def run():
 		hardware.show_error()
 
 	if not hardware.is_debug():
-		hardware.deepsleep()
+		pass
+		#hardware.deepsleep()
 
 
 run()
