@@ -1,5 +1,5 @@
 import machine
-import dht22
+import dht
 import time
 
 LED_PIN = 2  # D4
