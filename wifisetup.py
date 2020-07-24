@@ -10,6 +10,9 @@ def setup():
 	if not sta_if.isconnected():
         	print('Connecting to WiFi...')
 	        sta_if.active(True)
+		if config.STATIC:
+			print("Setting static IP address..")
+			sta_if.ifconfig((config.IP, config.SUBNET, config.GATEWAY, config.DNS))
 	        sta_if.connect(config.SSID, config.PASS)
        		while not sta_if.isconnected():
         	    print('-')
